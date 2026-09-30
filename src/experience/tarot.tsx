@@ -66,7 +66,7 @@ function TarotV1({ config, onStatusChange }: ExperienceProps<TarotConfig>) {
   return (
     <View>
       <Text>
-        {deckName} deck, draw {maxCards} card
+        {deckName} deck, draw {maxCards} cards
       </Text>
       {drawn.map((card) => (
         <Text key={card}>{`| ${card}`}</Text>
