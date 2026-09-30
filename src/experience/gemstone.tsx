@@ -7,7 +7,7 @@ import { registerExperience } from "../runtime/registry";
 type GemstoneConfig = { recommendationMode?: string };
 
 async function fetchRecommendation(mode: string) {
-  await delay(1000);
+  await delay(6000);
 
   if (mode === "personalized")
     throw new Error("Personalization service unavailable (503)");

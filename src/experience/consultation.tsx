@@ -11,7 +11,7 @@ const ASTROLOGERS: Record<string, string> = {
 };
 
 async function fetchAstrologer(mode: string) {
-  await delay(1000);
+  await delay(9000);
   const astrologer = ASTROLOGERS[mode];
   if (!astrologer) throw new Error(`Unsupported consultation mode: ${mode}`);
   return astrologer;

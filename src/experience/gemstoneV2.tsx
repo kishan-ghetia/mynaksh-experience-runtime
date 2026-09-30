@@ -7,7 +7,7 @@ import { ExperienceProps } from "../runtime/types";
 type GemstoneV2Config = { recommendationMode?: string };
 
 async function fetchRecommendationV2(mode: string) {
-  await delay(1000);
+  await delay(6000);
   if (mode === "personalized") return "Personalized stone";
   if (mode === "generic") return "Stone A";
   throw new Error(`unknown recommendation mode ${mode}`);

@@ -20,7 +20,7 @@ const DECKS: Record<string, string[]> = {
 };
 
 async function fetchDeck(deckName: string) {
-  await delay(1000);
+  await delay(3000);
   const deck = DECKS[deckName];
   if (!deck) throw new Error(`Unknown deck: ${deckName}`);
   return deck;
