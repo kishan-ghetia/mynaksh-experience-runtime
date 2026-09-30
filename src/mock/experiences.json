@@ -33,6 +33,26 @@
       }
     },
     {
+      "experience": "gemstone",
+      "version": "v2",
+      "entryPoint": "chat",
+      "onFailure": "show",
+      "enabled": true,
+      "config": {
+        "recommendationMode": "personalized"
+      }
+    },
+    {
+      "experience": "gemstone",
+      "version": "v3",
+      "entryPoint": "chat",
+      "onFailure": "show",
+      "enabled": true,
+      "config": {
+        "recommendationMode": "generic"
+      }
+    },
+    {
       "experience": "consultation",
       "version": "v1",
       "onFailure": "show",
