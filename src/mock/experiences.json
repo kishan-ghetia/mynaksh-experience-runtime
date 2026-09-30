@@ -1,0 +1,42 @@
+{
+  "experiences": [
+    {
+      "experience": "tarot",
+      "version": "v1",
+      "entryPoint": "chat",
+      "enabled": true,
+      "config": {
+        "deck": "classic",
+        "maxCards": 3
+      }
+    },
+    {
+      "experience": "tarot",
+      "version": "v1",
+      "entryPoint": "chat",
+      "enabled": true,
+      "config": {
+        "deck": "retro",
+        "maxCards": 3
+      }
+    },
+    {
+      "experience": "gemstone",
+      "version": "v1",
+      "entryPoint": "chat",
+      "enabled": true,
+      "config": {
+        "recommendationMode": "personalized"
+      }
+    },
+    {
+      "experience": "consultation",
+      "version": "v1",
+      "entryPoint": "chat",
+      "enabled": true,
+      "config": {
+        "mode": "human_astrologer"
+      }
+    }
+  ]
+}

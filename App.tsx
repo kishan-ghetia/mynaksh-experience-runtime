@@ -1,20 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet } from "react-native";
+import "./src/experience";
+import data from "./src/mock/experiences.json";
+import ExperienceRuntime from "./src/runtime/ExperienceRuntime";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ScrollView contentContainerStyle={styles.container}>
+      {data.experiences
+        .filter((exp) => exp.enabled)
+        .map((exp, index) => (
+          <ExperienceRuntime key={index} definition={exp} />
+        ))}
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+  container: { padding: 16, paddingTop: 60, gap: 12 },
 });
