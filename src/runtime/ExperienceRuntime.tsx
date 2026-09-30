@@ -16,6 +16,7 @@ export default function ExperienceRuntime({
     (next: ExperienceStatus, message?: string) => {
       setStatus(next);
       if (message) setError(message);
+      if (next === "failed") console.warn(`Experience failed: ${message}`);
     },
     [],
   );
@@ -31,6 +32,8 @@ export default function ExperienceRuntime({
   );
 
   const title = `${definition.experience} ${definition.version}`;
+
+  if (status === "failed" && definition.onFailure === "hide") return null;
 
   if (!Experience) {
     return (

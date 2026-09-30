@@ -19,4 +19,5 @@ export type ExperienceDefinition = {
   entryPoint: string;
   enabled: boolean;
   config: Record<string, unknown>;
+  onFailure?: "hide" | "show";
 };

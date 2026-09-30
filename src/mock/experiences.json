@@ -3,6 +3,7 @@
     {
       "experience": "tarot",
       "version": "v1",
+      "onFailure": "show",
       "entryPoint": "chat",
       "enabled": true,
       "config": {
@@ -13,6 +14,7 @@
     {
       "experience": "tarot",
       "version": "v1",
+      "onFailure": "show",
       "entryPoint": "chat",
       "enabled": true,
       "config": {
@@ -23,6 +25,7 @@
     {
       "experience": "gemstone",
       "version": "v1",
+      "onFailure": "show",
       "entryPoint": "chat",
       "enabled": true,
       "config": {
@@ -32,10 +35,21 @@
     {
       "experience": "consultation",
       "version": "v1",
+      "onFailure": "show",
       "entryPoint": "chat",
       "enabled": true,
       "config": {
         "mode": "human_astrologer"
+      }
+    },
+    {
+      "experience": "consultation",
+      "version": "v1",
+      "entryPoint": "chat",
+      "onFailure": "hide",
+      "enabled": true,
+      "config": {
+        "mode": "ai_astrologer"
       }
     }
   ]
